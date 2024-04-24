@@ -1,0 +1,106 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: say welcome
+  steps:
+  - intent: thank
+  - action: utter_thank
+
+- story: ask login questions
+  steps:
+  - intent: ask_login
+  - action: utter_login_info
+  
+- story: ask see grades questions
+  steps:
+  - intent: ask_see_grades
+  - action: utter_see_grades_info
+
+- story: ask see grades questions in Greek
+  steps:
+  - intent: ask_see_grades_gr
+  - action: utter_see_grades_info_gr
+
+- story: ask submit request questions
+  steps:
+  - intent: ask_submit_request
+  - action: utter_submit_request_info_1
+  - action: utter_submit_request_info_2
+  - action: utter_submit_request_info_3
+
+- story: ask about Students app questions
+  steps:
+  - intent: ask_about_Students_app
+  - action: utter_about_Students_app_info
+
+- story: ask mobile version questions
+  steps:
+  - intent: ask_mobile_version
+  - action: utter_mobile_version_info
+
+- story: ask registration history questions
+  steps:
+  - intent: ask_registration_history
+  - action: utter_registration_history_info
+
+- story: ask courses registration questions
+  steps:
+  - intent: ask_courses_registration
+  - action: utter_courses_registration_info_1
+  - action: utter_courses_registration_info_2
+
+- story: ask see personal info questions
+  steps:
+  - intent: ask_see_personal_info
+  - action: utter_see_personal_info_info_1
+  - action: utter_see_personal_info_info_2
+
+- story: ask see messages questions
+  steps:
+  - intent: ask_see_messages
+  - action: utter_see_messages_info
+
+- story: ask see registration status questions
+  steps:
+  - intent: ask_see_registration_status
+  - action: utter_see_registration_status_info
+
+- story: irrelevant input
+  steps:
+  - intent: irrelevant_input
+  - action: utter_irrelevant_input
+
+- story: interactive_story_1
+  steps:
+  - intent: ask_see_grades
+  - action: utter_see_grades_info
+  - intent: ask_see_grades
+  - action: utter_see_grades_info

@@ -1,0 +1,272 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: thank
+  examples: |
+    - thanks
+    - thank you
+    - thank you very much
+    - thanks a lot
+    - thank you so much
+    - thank you loads
+    - thanks loads
+    - cheers
+    - cheers bro
+    - ok thanks
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: ask_login
+  examples: |
+    - How do I login?
+    - How do I sign in?
+    - How do I log in?
+    - How do I sign into my account?
+    - How do I log into my account?
+    - How do I sign in to my account?
+    - How do I sign in to Students account?
+    - Login
+    - Sign in
+    - How to login to my Students account?
+    - What credentials do i need to login?
+    - What credentials do i need to sign in?
+
+- intent: ask_see_grades
+  examples: |
+    - How do I see my grades?
+    - How do I view my grades?
+    - How do I check my grades?
+    - Grades
+    - View grades
+    - Check grades
+    - Can i see my grades?
+    - See grades
+    - Hello, How do I access my grades
+
+- intent: ask_see_grades_gr
+  examples: |
+    - Πως βλέπω τους βαθμούς μου?
+    - Πως βλέπω τους βαθμούς μου στο Students?
+    - Πως μπορώ να δω τους βαθμούς μου?
+    - Βαθμοί
+    - Βλέπω βαθμούς
+    - Έλεγχος βαθμών
+    - Μπορώ να δω τους βαθμούς μου?
+
+- intent: ask_submit_request
+  examples: |
+    - How do I submit a request?
+    - Can I submit a request to the secreteriat?
+    - How do I submit a request to the secreteriat?
+    - Submit request
+    - Request to the secreteriat
+
+- intent: ask_about_Students_app
+  examples: |
+    - What is the Students app?
+    - What is the Students application?
+    - What is can I do with the Students app?
+    - How can I use the Students app?
+    - How can I use the Students application?
+    - What is this app?
+    - What is this application?
+    - What is the purpose of the Students app?
+    - How can this app help me?
+    - How can this application help me?
+
+- intent: ask_mobile_version
+  examples: |
+    - Is there a mobile version of the Students app?
+    - Is there a mobile version of the Students application?
+    - Can I use the Students app on my phone?
+    - Can I use the Students application on my phone?
+    - Can I use the Students app on my mobile device?
+    - Can I use the Students application on my mobile device?
+    - Can I use the Students app on my smartphone?
+    - Can I use the Students application on my smartphone?
+    - Can I use the Students app on my tablet?
+    - Can I use the Students application on my tablet?
+    - Can I use the Students app on my iPad?
+    - Can I use the Students application on my iPad?
+    - Can I download Students app on my phone?
+    - Is there a mobile app?
+    - Is there a mobile application?
+    - Can I download the app on my phone?
+    - Can I dowload the app from the app store?
+    - Can I download the app from the play store?
+    - Students mobile version
+
+- intent: ask_registration_history
+  examples: |
+    - How do I check my registration history?
+    - How do I view my registration history?
+    - How do I see my registration history?
+    - Registration history
+    - View registration history
+    - Check registration history
+    - Can i see my registration history?
+    - See registration history
+    - Hello, How do I access my registration history
+
+- intent: ask_courses_registration
+  examples: |
+    - How do I register for courses?
+    - How do I enroll in courses?
+    - How do I sign up for courses?
+    - Register for courses
+    - Enroll in courses
+    - Sign up for courses
+    - Can i register for courses?
+    - Register courses
+    - Hello, How do I register for courses
+    - Courses registration
+    - How do I do courses registration?
+
+- intent: ask_see_personal_info
+  examples: |
+    - How do I see my personal information?
+    - How do I view my personal information?
+    - How do I check my personal information?
+    - Personal information
+    - View personal information
+    - Check personal information
+    - Can i see my personal information?
+    - See personal information
+    - Hello, How do I access my personal information
+    - How to see personal information
+
+- intent: ask_see_messages
+  examples: |
+    - How do I see my messages?
+    - How do I view my messages?
+    - How do I check my messages?
+    - Messages
+    - View messages
+    - Check messages
+    - Can i see my messages?
+    - See messages
+    - Hello, How do I access my messages
+    - How to see messages
+
+- intent: ask_see_registration_status
+  examples: |
+    - How do I see my registration status?
+    - How do I view my registration status?
+    - How do I check my registration status?
+    - Registration status
+    - View registration status
+    - Check registration status
+    - Can i see my registration status?
+    - See registration status
+    - Hello, How do I access my registration status
+    - How to see registration status
+
+- intent: irrelevant_input
+  examples: |
+    - asdfasdfasfasdf
+    - Whats the weather like?
+    - Can you tell me about the latest news?
+    - Tell me a joke
+    - Tell me a story
+    - What is your favorite color?
+    - Do you like pizza?
+    - What's the population of France?
+    - What is the meaning of life?
+
+
+
+
+
+
+
+
+
+
+
+

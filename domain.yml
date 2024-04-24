@@ -1,0 +1,87 @@
+version: '3.1'
+intents:
+- affirm
+- ask_login
+- ask_see_grades
+- ask_see_grades_gr
+- ask_submit_request
+- ask_about_Students_app
+- ask_mobile_version
+- ask_registration_history
+- ask_courses_registration
+- ask_see_personal_info
+- ask_see_messages
+- ask_see_registration_status
+- irrelevant_input
+- bot_challenge
+- deny
+- goodbye
+- thank
+- greet
+- mood_great
+- mood_unhappy
+responses:
+  utter_greet:
+  - text: Hey! I'm KHDBOT, your personal assistant. How can I help you today?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/kn9sGR4_d.webp?maxwidth=520&shape=thumb&fidelity=high
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_thank:
+  - text: You're welcome! Is there anything else I can help you with?
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_login_info:
+  - text: You can login by visiting the login page [here](https://students.auth.gr) and entering your universityID credentials.
+  utter_see_grades_info:
+  - text: 'To see your grades, simply tap on the “Grades” option from the navigation bar and select either “Recent Grades” or “All Grades” from the dropdown menu to see either your recent grades or all the grades throughout your studies'
+    image: https://it.auth.gr/wp-content/uploads/2022/01/10_1.png
+  
+  utter_see_grades_info_gr:
+  - text: 'Για να δείτε τους βαθμούς σας, πατήστε στην επιλογή “Βαθμολογίες” από την μπάρα πλοήγησης και επιλέξτε είτε “Πρόσφατες Βαθμολογίες” είτε “Όλες οι Βαθμολογίες” από το αναδυόμενο μενού ανάλογα τον τύπο των βαθμολογιών που θέλετε να δείτε.'
+    image: https://it.auth.gr/wp-content/uploads/2022/01/10_1.png
+
+  utter_submit_request_info_1:
+  - text: To submit a request for a certificate, click the “Support” option from the navigation bar and then from the dropdown menu click “Requests”.
+    image: https://it.auth.gr/wp-content/uploads/2022/01/14.png
+  utter_submit_request_info_2:
+  - text: You will be redirected to a new page where you can click on the green button named “Request”
+    image: https://it.auth.gr/wp-content/uploads/2022/01/15.png
+  utter_submit_request_info_3:
+  - text: Finally select the type of request you want to get. At the end press the green “Request” button, located at the center of the page.    
+  utter_about_Students_app_info:
+  - text: The UniverSIS Students application is a web-based Student Information System (SIS) that allows you to access your academic information, such as grades, course registrations, and personal information, from any device. The application is designed to be user-friendly, responsive and easy to navigate, making it easy for students to access the information they need quickly and easily.
+  utter_mobile_version_info:
+  - text: No, there is currently no mobile version of the UniverSIS Students application. However, the application is designed to be responsive and can be accessed from any device with an internet connection, making it easy to access your academic information on the go. You can access the application from your smartphone, tablet, or any other device with a web browser.
+  utter_registration_history_info:
+  - text: To view your registration history, tap on the “Registration History” option from the navigation bar and select "Registration History" from the dropdown menu. You will then be able to see a list of all the courses you have registered for each academic year, along with informaiton for each course such as the ECTS, type, Instructor, etc.
+  utter_courses_registration_info_1:
+  - text: Given that it is registration period, click on the “Registrations” option from the navigation bar and from the dropdown menu select “Courses Registration”. On the new page, click on the edit button on the upper right corner.
+    image: https://it.auth.gr/wp-content/uploads/2022/01/5_5.png
+  utter_courses_registration_info_2:
+  - text: 'From the list presented to you with the available courses, select those of your preference by clicking on the select button next to each course. After you have finished selecting your courses, tap on the green submit button on the lower right corner of the screen to submit your courses registration'
+    image: https://it.auth.gr/wp-content/uploads/2022/01/6_4.png
+  utter_see_personal_info_info_1:
+  - text: 'To see your personal information click on your username shown on the navigation bar and then click “My Profile” from the dropdown menu.'
+    image: https://it.auth.gr/wp-content/uploads/2022/01/16.png
+  utter_see_personal_info_info_2:
+  - text: In the new page your personal information will appear. In case you want to edit your personal information, email the secreteriat of your department by declaring which piece of information needs to be changed. You can find a list of emails of all the secreteriats [here](https://www.auth.gr/registrars/)
+  utter_see_messages_info:
+  - text: To view your messages, click on the bell icon on the navigation bar, then click “View all messages” from the dropdown menu. Afterwards you can choose which messages you prefer to see by applying filters. If you have a new message the bell icon will have an indicator on it, to notify you about it.
+  utter_see_registration_status_info:
+  - text: 'To view your registration status, click on “Registrations” option from the navigation bar, then click on “Courses Registrations” from the dropdown menu. If it is a registration period, you will see the status of your registration on the right. It will be either marked as “Your registration has been subbmitted and approved by the secreteriat” or as “rejected by the secreteriat”. In case it is not a registration period, you will encounter the following message “Registration period closed. You cannot submit/edit your registration.”'
+    image: https://it.auth.gr/wp-content/uploads/2023/10/studentscourses3-768x397.png
+  utter_irrelevant_input:
+  - text: I'm sorry, but I have no information about this topic. Please ask me something related to the UniverSIS Students application and I will do my best to help you.  
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+actions:
+- utter_see_grades_info
